@@ -1,0 +1,43 @@
+<html>
+<head>
+    <!-- 1. Include style -->
+    <link href="css/atc-style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- 2. Include script -->
+    <script type="text/javascript">(function () {
+            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+                s.src = 'js/atc-min.js';
+                var h = d[g]('body')[0];h.appendChild(s); }})();
+    </script>
+
+    <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'>
+    </script>
+    <script async src='js/calendar.js' type="text/javascript">
+    </script>
+
+    <!-- 3. Place event data -->
+
+    <div id='content'>
+        <h1 id='calendar' style="color:grey">LOADING . . . .</h1>
+        <ul id='events'></ul>
+    </div>
+
+    <span class="addtocalendar atc-style-blue">
+        <a class="atcb-link"><img src="svg/time.svg" width="15" style="vertical-align:-10%"/> Add to Calendar</a>
+        <var class="atc_event">
+            <var class="atc_date_start">2016-05-04 12:00:00</var>
+            <var class="atc_date_end">2016-05-04 18:00:00</var>
+            <var class="atc_timezone">Europe/London</var>
+            <var class="atc_title">Star Wars Day Party</var>
+            <var class="atc_description">May the force be with you</var>
+            <var class="atc_location">Tatooine</var>
+            <var class="atc_organizer">Luke Skywalker</var>
+            <var class="atc_organizer_email">luke@starwars.com</var>
+        </var>
+    </span>
+</body>
+</html>
